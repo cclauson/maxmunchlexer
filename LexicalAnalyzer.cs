@@ -182,7 +182,7 @@ namespace LexicalAnalysis
 			while (this.recognized.Count != 0 || this.lookAhead.Count != 0) {
 				//this next call will always decrease the value of
 				//recognized.Count + lookAhead.Count by at least
-				//and, and is therefore this loop will always terminate
+				//one, and therefore this loop will always terminate
 				DoneWithLookahead ();
 			}
 		}
