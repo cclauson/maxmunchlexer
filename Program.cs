@@ -99,6 +99,7 @@ namespace LexicalAnalysis
 			//to lex, we need a list of token types
 			IList<TokenType<CharIntPairLexerAdapter>> types =
 				new List<TokenType<CharIntPairLexerAdapter>>();
+			
 			//add a token type for a stretch of whitespace
 			types.Add(new TokenType<CharIntPairLexerAdapter>(
 				WhitespaceRecognizer(), delegate(IList<CharIntPairLexerAdapter> ciplas) {
